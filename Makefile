@@ -1,0 +1,2 @@
+﻿all:
+	@node server.js
