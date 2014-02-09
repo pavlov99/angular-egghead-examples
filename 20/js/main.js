@@ -2,7 +2,7 @@
 
 app.controller("AppCtrl", function($scope){
     $scope.leaveVoicemail = function(number, message){
-        alert("Number: ", + number + " said: " + message)
+        alert("Number: " + number + " said: " + message)
     }
 })
 
@@ -14,9 +14,9 @@ app.directive("phone", function(){
             network: "=",
             makeCall: "&"
         },
-        template: '<div class="panel">Number: {{number}} Network:<select ng-model="network" ng-options="net for net in networks"></select></div>' +
-            '<input type="text" ng-model="valu">' +
-            '<div class="button" ng-click="makeCall({numnber: number, message: value})">Call home!</div></div>',
+        template: '<div class="panel">Number: {{number}} Network: <select ng-model="network" ng-options="net for net in networks"></select></div>' +
+            '<input type="text" ng-model="value">' +
+            '<div class="button" ng-click="makeCall({number: number, message: value})">Call home!</div></div>',
         link: function(scope){
             scope.networks = ["Verizon", "AT&T", "Sprint"];
             scope.network = scope.networks[0]
