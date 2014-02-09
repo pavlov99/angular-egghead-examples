@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+
+    <div ng-app="phoneApp">
+        <div ng-controller="AppCtrl">
+            <phone number="555-1234" network="network" make-call="leaveVoicemessage(number, message)"></phone>
+            <phone number="867-5309" network="network" make-call="leaveVoicemessage(number, message)"></phone>
+            <phone number="911" network="network" make-call="leaveVoicemessage(number, message)"></phone>
+        </div>
+    </div>
+
+<script src="../bower_components/jquery/jquery.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
