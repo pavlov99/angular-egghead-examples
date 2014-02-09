@@ -1,0 +1,23 @@
+{
+  "name": "pavlov99.github.com",
+  "version": "0.0.0",
+  "homepage": "http://pavlov99.github.io",
+  "authors": [
+    "Kirill Pavlov <kirill.pavlov@phystech.edu>"
+  ],
+  "description": "Angular examples",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "jquery": "2.0.3",
+    "angular": "1.2.8",
+    "angular-ui": "0.4.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
